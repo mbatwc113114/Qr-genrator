@@ -1,0 +1,91 @@
+*{
+    padding:8px;
+    margin: 0;
+}
+
+html{
+padding: 0;
+}
+
+body{
+    padding: 0;
+}
+
+.nav{
+    /* justify-content: center; */
+    align-items: center;
+    text-align: right;
+    background-color: white;
+    color: red;
+    height: 5vh;
+}
+
+.section{
+    
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: url("../bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    height: 95vh;
+}
+
+.nav a{
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+.card{
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter:blur(2px) ;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgb(20,20, 20);
+}
+
+#info{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+#info p{
+    width: 40vw;
+}
+
+.text{
+    height: 50vh;
+    text-align: center;
+
+}
+
+.text button{
+    bottom: 0;
+    background-color: white;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    /* margin-top: 2vh; */
+    height: 80vh;
+    width: 50vw;
+    transition: 0.5s;
+}
+.form:hover{
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    /* margin-top: 2vh; */
+    height: 80vh;
+    width: 80vw;
+}
