@@ -17,10 +17,10 @@ const Discription =document.getElementById("Discription");
 let inputBoxs = document.querySelectorAll(".form input")
 
 downloadBtn.addEventListener("click", ()=>{
-    const url = qrComp.scr;
+    const url = qrComp.querySelector('img').scr;
     const a = document.createElement('a');
-    a.href = imageUrl;
-    a.download = `${productName}-qr.jpg`; 
+    a.href = url;
+    a.download = `${productName.value}-qr.jpg`; 
     a.click();
 })
 
@@ -43,6 +43,9 @@ try{
     if(qrComp.classList.value == 'hide'){
         qrComp.classList.remove('hide');
         
+    }if(downloadBtn.classList.value == 'hide'){
+        downloadBtn.classList.remove('hide');
+        
     }
     if(Status.classList.value == ''){
         Status.classList.add('hide');
@@ -63,6 +66,9 @@ catch(error){
     
     if(qrComp.classList.value == ''){
         qrComp.classList.add('hide');
+    }
+    if(downloadBtn.classList.value == ''){
+        downloadBtn.classList.add('hide');
     }
     if(Status.classList.value == 'hide'){
         Status.classList.remove('hide');
