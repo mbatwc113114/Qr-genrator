@@ -21,24 +21,30 @@
     </div>
 
     <div class="section">
-       <form action="" class="card form">
-        <div>
+        <div class="card">
+        <h1>Qr genrator</h1>
+       <form action="" class="form">
+        
+        <div class="inputBox">
         <label for="productName">Product Name</label>
         <input type="text" id="productName">
         <label for="productId">equpiment id</label>
         <input type="text" id="productId">
-        <label for="materail">materail</label>
-        <input type="text" id="materail">
+        <label for="material">materail</label>
+        <input type="text" id="material">
         <label for="catagory">catagory</label>
         <input type="text" id="catagory">
         <label for="Discription">Discription</label>
         <input type="text" id="Discription">
-        <input type="button" value="genrate" id="genrateBtn">
-    </div>
-        <div id="qrcode"></div>
-    
+        </div>
+        <div>
+        <div class="hide" id="qrcode"></div>
+        <button id="download">Download</button>
+        </div>
+    <p class="hide" id="status">overflow reduce the data</p>
     </form>
-    </div>
+    
+    </div></div>
 
     <script src="js/genrate.js"></script>
 
