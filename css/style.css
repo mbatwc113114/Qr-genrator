@@ -77,15 +77,12 @@ body{
     align-items: center;
     /* margin-top: 2vh; */
     height: 80vh;
-    width: 50vw;
+    width: 80vw;
     transition: 0.5s;
 }
-.form:hover{
-    justify-content: center;
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    /* margin-top: 2vh; */
-    height: 80vh;
-    width: 80vw;
+
+#qrcode{
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 0 0 4px 4px rgb(12, 12, 12);
 }
