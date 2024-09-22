@@ -9,14 +9,18 @@ padding: 0;
 
 body{
     padding: 0;
+    background-image: url("../bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .nav{
     /* justify-content: center; */
     align-items: center;
     text-align: right;
-    background-color: white;
-    color: red;
+    background-color: rgba(15, 15, 12,0.5);
+    color:white;
     height: 5vh;
 }
 
@@ -25,16 +29,15 @@ body{
     justify-content: center;
     align-items: center;
     align-content: center;
-    background-image: url("../bg4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     color: black;
-    height: 95vh;
+    height: max-content;
 }
 
 .nav a{
-    font-size: 20px;
-    color: red;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 24px;
+    color: white;
     text-decoration: none;
 }
 .card{
@@ -46,15 +49,19 @@ body{
 }
 
 #info{
+    align-content: center;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
     height: 90vh;
 }
+#info img{
+    width:400px;
+}
 
 #info p{
-    width: 40vw;
+    width: 50vw;
 }
 
 .text{
@@ -64,8 +71,13 @@ body{
 }
 
 .text button{
+    width: 50vw;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
     bottom: 0;
-    background-color: white;
+    background-color: black;
 }
 
 .form{
@@ -95,13 +107,34 @@ body{
     width: 50vw;
     display: flex;
     flex-direction: column;
+
 }
 
-.form input{
+.form input{margin-top: 3px;
     position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 2px 2px rgba(15, 15, 12,0.5);
+    border-radius: 10px;
     width: 40vw;
+    background-color: rgba(45, 101, 82, 0.5);
+    border: none;
+    backdrop-filter: blur(4px);
+}
+.form label{
+    color: antiquewhite;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: none;
+    visibility: hidden;
 }
 
+.form input::placeholder{
+    font-size: 16px;
+    font-weight: bold;
+color: rgba(179, 170, 160, 0.779);
+
+}
 @media (max-width:700px) {
     .form{
         display: flex;
@@ -111,7 +144,7 @@ body{
         align-content: center;
         align-items: center;
         /* margin-top: 2vh; */
-        height: 80vh;
+        height: 100vh;
         width: 80vw;
         transition: 0.5s;
     }
@@ -124,4 +157,32 @@ body{
         position: relative;
         width: 75vw;
     }
+    
+#info{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#info img{
+    width:200px;
+}
+}
+
+#download{
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 270px;
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+}
+
+.section h1 {
+    background-color:rgba(45, 101, 82, 0.5);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    box-shadow: 0 0 5px 2px rgb(20,20, 20);
 }

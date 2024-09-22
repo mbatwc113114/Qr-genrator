@@ -17,11 +17,12 @@ const Discription =document.getElementById("Discription");
 let inputBoxs = document.querySelectorAll(".form input")
 
 downloadBtn.addEventListener("click", ()=>{
-    const url = qrComp.querySelector('img').scr;
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${productName.value}-qr.jpg`; 
-    a.click();
+    const canvas = qrComp.querySelector('canvas');
+const url = canvas.toDataURL();
+const a = document.createElement('a');
+a.href = url;
+a.download = `${productName.value}.png`; // set the file name
+a.click();
 })
 
 function qrGenrate(){
